@@ -1,0 +1,56 @@
+# Sarwar Ali portfolio — Hostinger (LiteSpeed/Apache)
+
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+# www.sarwar.theskilltek.com -> sarwar.theskilltek.com (one address for Google)
+RewriteCond %{HTTP_HOST} ^www\.sarwar\.theskilltek\.com$ [NC]
+RewriteRule ^(.*)$ https://sarwar.theskilltek.com/$1 [L,R=301]
+
+# /index.html -> / (avoid duplicate URLs)
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [L,R=301]
+
+# Block AI scrapers, SEO scrapers and download tools
+RewriteCond %{HTTP_USER_AGENT} (GPTBot|ChatGPT-User|OAI-SearchBot|CCBot|ClaudeBot|anthropic-ai|PerplexityBot|Bytespider|Amazonbot|meta-externalagent|Diffbot|Omgilibot|ImagesiftBot|AhrefsBot|SemrushBot|MJ12bot|DotBot|HTTrack|wget|WebCopier|WebZIP|Teleport|SiteSnagger|Offline\ Explorer|python-requests|scrapy|curl) [NC]
+RewriteRule .* - [F,L]
+
+# Stop other sites hotlinking your photos (search engines and link previews still allowed)
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?(sarwar\.)?theskilltek\.com [NC]
+RewriteCond %{HTTP_REFERER} !(google|bing|duckduckgo|facebook|linkedin|whatsapp|twitter|x\.com|t\.co|telegram|slack|instagram) [NC]
+RewriteRule \.(jpe?g|png|webp|gif)$ - [F,NC,L]
+
+# Hide repository files
+RewriteRule ^(\.git|README\.md) - [F,L]
+Options -Indexes
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header set X-Robots-Tag "noai, noimageai"
+  <FilesMatch "\.(pdf)$">
+    Header set X-Robots-Tag "noindex, noai, noimageai"
+  </FilesMatch>
+</IfModule>
+
+# Speed: compression and caching
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/xml application/xml text/plain
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType application/pdf "access plus 7 days"
+</IfModule>

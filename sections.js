@@ -81,3 +81,16 @@
     });
   });
 })();
+
+/* Copy protection: images can't be dragged or right-click saved; copied text carries attribution */
+(() => {
+  'use strict';
+  document.addEventListener('contextmenu', (e) => { if (e.target.closest('img, .gun-wrap, .slip')) e.preventDefault(); });
+  document.addEventListener('dragstart', (e) => { if (e.target.tagName === 'IMG') e.preventDefault(); });
+  document.addEventListener('copy', (e) => {
+    const sel = String(window.getSelection() || '');
+    if (sel.length < 60 || !e.clipboardData) return;
+    e.preventDefault();
+    e.clipboardData.setData('text/plain', sel + '\n\n— © Sarwar Ali · https://sarwar.theskilltek.com');
+  });
+})();
