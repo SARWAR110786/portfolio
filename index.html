@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sarwar Ali · AI Automation Developer, Data Analyst &amp; Vibe Coder</title>
+  <meta name="description" content="Sarwar Ali — AI automation developer from Thatta, Sindh. WhatsApp chatbots and AI agents with n8n &amp; OpenAI, vibe-coded websites, data analytics and graphic design." />
+  <meta property="og:title" content="Sarwar Ali · AI Automation Developer" />
+  <meta property="og:description" content="WhatsApp AI agents, n8n workflows, vibe-coded websites, data analytics and design." />
+  <meta property="og:image" content="assets/sarwar.jpg" />
+  <meta name="theme-color" content="#FAFAFA" />
+  <link rel="icon" href="assets/sarwar-sm.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Bricolage+Grotesque:opsz,wght@12..96,600&family=Archivo:wght@400;500;700;800;900&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="sections.css" />
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" role="banner">
+    <a class="logo" href="#top" aria-label="Sarwar — home">
+      <img class="logo-img" alt="" width="112" hidden />
+      <span class="logo-text">SARWAR.</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Sections">
+      <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <a class="key key--white key--nav" id="talkBtn" href="https://wa.me/923173024105" target="_blank" rel="noopener">
+      <span class="key-legend" aria-hidden="true">@</span>
+      <span class="key-label">Let's Talk ↗</span>
+    </a>
+  </header>
+
+  <main>
+  <!-- ============ HERO ============ -->
+  <section id="top" class="hero" aria-label="Intro">
+    <div class="hero-left">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>THATTA, SINDH · OPEN FOR PROJECTS</p>
+
+      <h1 class="headline">
+        Hi, I'm <em>Sarwar,</em> I build WhatsApp chatbots, AI agents &amp; websites that work.
+      </h1>
+
+      <p class="lede">
+        AI automation developer, data analyst, vibe coder and graphic design instructor.
+        I build with n8n, OpenAI and Supabase, ship sites with AI-assisted development,
+        and turn raw data into dashboards. Hold the trigger to spray my work.
+      </p>
+
+      <div class="actions">
+        <button type="button" class="key key--black" id="sprayBtn" aria-describedby="sprayHint">
+          <span class="key-legend" aria-hidden="true">⏎</span>
+          <span class="key-label">Spray my work</span>
+        </button>
+        <button type="button" class="key key--white" id="cleanBtn">
+          <span class="key-legend" aria-hidden="true">↺</span>
+          <span class="key-label">Clean up</span>
+        </button>
+        <a class="key key--white" id="cvBtn" href="cv/Sarwar-Ali-CV.pdf" target="_blank" rel="noopener" data-cv>
+          <span class="key-legend" aria-hidden="true">↓</span>
+          <span class="key-label">Download CV</span>
+        </a>
+        <p class="counter" aria-live="polite"><strong id="count">0</strong> <span id="countWord">slips</span> sprayed</p>
+        <span id="sprayHint" class="sr-only">Hold the button, the gun, or the Space key to keep spraying.</span>
+      </div>
+
+      <!-- The gun lives here in the DOM so it flows naturally on small screens;
+           on desktop it is absolutely positioned on the right of the hero. -->
+      <div class="gun-wrap" id="gun" role="button" tabindex="0"
+           aria-label="Portfolio paper gun. Hold to spray slips of Sarwar's work.">
+        <div class="gun-shadow" aria-hidden="true"></div>
+        <div class="gun-recoil" id="gunRecoil">
+          <svg class="gun-svg" viewBox="0 0 800 560" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="gTop" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ff5a5e" />
+                <stop offset="1" stop-color="#ff3a40" />
+              </linearGradient>
+              <linearGradient id="gSide" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ff3b3f" />
+                <stop offset=".55" stop-color="#e0141c" />
+                <stop offset="1" stop-color="#a50a10" />
+              </linearGradient>
+              <linearGradient id="gBack" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#c00d14" />
+                <stop offset="1" stop-color="#7d050a" />
+              </linearGradient>
+              <linearGradient id="gChamfer" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#ff4a4f" />
+                <stop offset="1" stop-color="#ff6266" />
+              </linearGradient>
+              <linearGradient id="gGrip" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f0222a" />
+                <stop offset=".6" stop-color="#c90f16" />
+                <stop offset="1" stop-color="#94080e" />
+              </linearGradient>
+              <linearGradient id="gSheen" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fff" stop-opacity=".28" />
+                <stop offset=".35" stop-color="#fff" stop-opacity="0" />
+              </linearGradient>
+              <radialGradient id="gSlot" cx=".5" cy=".5" r=".7">
+                <stop offset="0" stop-color="#140102" />
+                <stop offset="1" stop-color="#3a0306" />
+              </radialGradient>
+            </defs>
+
+            <!-- Grip (behind the body) -->
+            <g class="grip">
+              <path d="M436 338 L566 338 L628 522 Q630 536 616 538 L512 548 Q498 549 494 536 Z" fill="url(#gGrip)" />
+              <path d="M566 338 L598 330 L662 510 Q664 520 654 524 L628 522 Z" fill="url(#gBack)" />
+              <g stroke="#7d050a" stroke-opacity=".35" stroke-width="3" stroke-linecap="round">
+                <line x1="486" y1="420" x2="582" y2="412" />
+                <line x1="496" y1="450" x2="592" y2="442" />
+                <line x1="506" y1="480" x2="602" y2="472" />
+              </g>
+              <path d="M440 342 L498 532" stroke="#fff" stroke-opacity=".28" stroke-width="3" stroke-linecap="round" />
+            </g>
+
+            <!-- Trigger guard + trigger -->
+            <path d="M350 340 C336 418 372 456 438 456 L478 452" fill="none" stroke="#a50a10" stroke-width="18" stroke-linecap="round" />
+            <path d="M350 340 C336 418 372 456 438 456 L478 452" fill="none" stroke="url(#gSide)" stroke-width="12" stroke-linecap="round" />
+            <path id="trigger" class="trigger" d="M402 338 C398 372 406 400 430 418 C438 404 430 372 428 338 Z" fill="#7d050a" />
+
+            <!-- Body: back face, top face, chamfer, side face -->
+            <polygon points="640,150 684,102 684,297 640,345" fill="url(#gBack)" />
+            <polygon points="90,150 134,102 684,102 640,150" fill="url(#gTop)" />
+            <polygon points="30,210 90,150 134,102 74,162" fill="url(#gChamfer)" />
+            <path d="M30 210 L90 150 L640 150 L640 345 L62 345 L30 318 Z" fill="url(#gSide)" />
+            <path d="M30 210 L90 150 L640 150 L640 345 L62 345 L30 318 Z" fill="url(#gSheen)" />
+
+            <!-- Output slot (on the front chamfer) -->
+            <polygon id="slot" points="49.9,189.4 85.9,153.4 114.1,122.6 78.1,158.6" fill="url(#gSlot)" />
+            <polyline points="49.9,189.4 85.9,153.4" fill="none" stroke="#ff8a8d" stroke-width="2" stroke-linecap="round" />
+
+            <!-- Highlights & panel lines -->
+            <line x1="90" y1="150" x2="640" y2="150" stroke="#fff" stroke-opacity=".8" stroke-width="3" stroke-linecap="round" />
+            <line x1="90" y1="150" x2="134" y2="102" stroke="#fff" stroke-opacity=".55" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="134" y1="102" x2="684" y2="102" stroke="#fff" stroke-opacity=".35" stroke-width="2" />
+            <line x1="640" y1="150" x2="684" y2="102" stroke="#fff" stroke-opacity=".3" stroke-width="2" />
+            <line x1="56" y1="186" x2="632" y2="186" stroke="#7d050a" stroke-opacity=".38" stroke-width="2" />
+            <line x1="40" y1="314" x2="632" y2="314" stroke="#7d050a" stroke-opacity=".38" stroke-width="2" />
+            <line x1="56" y1="188" x2="632" y2="188" stroke="#fff" stroke-opacity=".14" stroke-width="1.5" />
+
+            <!-- Rivets -->
+            <g class="rivets">
+              <circle cx="118" cy="168" r="5.5" fill="#5a0306" /><circle cx="116.5" cy="166.5" r="1.8" fill="#ff8a8d" />
+              <circle cx="618" cy="168" r="5.5" fill="#5a0306" /><circle cx="616.5" cy="166.5" r="1.8" fill="#ff8a8d" />
+              <circle cx="78"  cy="330" r="5.5" fill="#5a0306" /><circle cx="76.5"  cy="328.5" r="1.8" fill="#ff8a8d" />
+              <circle cx="618" cy="330" r="5.5" fill="#5a0306" /><circle cx="616.5" cy="328.5" r="1.8" fill="#ff8a8d" />
+            </g>
+
+            <!-- PORTFOLIO lettering -->
+            <text class="gun-word gun-word--shadow" x="96" y="290" textLength="510" lengthAdjust="spacingAndGlyphs">PORTFOLIO</text>
+            <text class="gun-word" x="94" y="286" textLength="510" lengthAdjust="spacingAndGlyphs">PORTFOLIO</text>
+          </svg>
+        </div>
+      </div>
+
+      <section class="tray" id="tray" aria-labelledby="trayTitle">
+        <h2 class="tray-title" id="trayTitle">WHAT I BUILD · CLICK A SLIP</h2>
+        <div class="tray-grid" id="trayGrid"></div>
+      </section>
+    </div>
+
+    <!-- All paper slips are rendered here (positioned with transforms). -->
+    <div class="slip-layer" id="slipLayer"></div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee-clip" aria-hidden="true"><div class="marquee">
+    <div class="marquee-track">
+      <span>WhatsApp AI Agents</span><i>✦</i><span>n8n Workflows</span><i>✦</i><span>Vibe Coding</span><i>✦</i><span>Data Analytics</span><i>✦</i><span>Power BI Dashboards</span><i>✦</i><span>Python</span><i>✦</i><span>Graphic Design</span><i>✦</i>
+      <span>WhatsApp AI Agents</span><i>✦</i><span>n8n Workflows</span><i>✦</i><span>Vibe Coding</span><i>✦</i><span>Data Analytics</span><i>✦</i><span>Power BI Dashboards</span><i>✦</i><span>Python</span><i>✦</i><span>Graphic Design</span><i>✦</i>
+    </div>
+  </div></div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="sec about" id="about" aria-labelledby="aboutTitle">
+    <div class="sec-head">
+      <p class="sec-kicker"><span>01</span> About me</p>
+      <h2 class="sec-title" id="aboutTitle">A builder from <em>Thatta</em> who teaches, designs and automates.</h2>
+    </div>
+
+    <div class="about-grid">
+      <figure class="about-photo reveal">
+        <img src="assets/sarwar.jpg" alt="Portrait of Sarwar Ali" width="640" height="640" loading="lazy" />
+        <figcaption><span class="dot" aria-hidden="true"></span> Open to projects &amp; freelance work</figcaption>
+      </figure>
+
+      <div class="about-copy reveal">
+        <p class="about-lead">I'm Sarwar Ali, a Computer Science student at the University of Sindh and an AI automation developer based in Makli, Thatta.</p>
+        <p>I build WhatsApp chatbots and AI agents with n8n, OpenAI and Supabase, ship websites through AI-assisted development (vibe coding), and analyse data with Python, SQL and Power BI. My recent work includes a multi-flow WhatsApp chatbot for Collective Pakistan that guides citizens through the Right to Information process.</p>
+        <p>Alongside building, I teach. I've trained multiple batches of students in graphic design for the Sindh government's People's IT Programme at MUET, and I'm an instructor under the NAVTTC programme. Freelancing on Fiverr since 2018 taught me to deliver for real clients.</p>
+        <p class="about-motto">Learn by building. Solve real problems. Automate repetitive work.</p>
+
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Makli, Thatta · Sindh, Pakistan</dd></div>
+          <div><dt>Studying</dt><dd>BS Computer Science · University of Sindh</dd></div>
+          <div><dt>Building</dt><dd>WhatsApp AI agents, n8n workflows, websites</dd></div>
+          <div><dt>Teaching</dt><dd>Graphic design · PITP-MUET &amp; NAVTTC</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <ul class="stats" aria-label="Quick numbers">
+      <li class="reveal"><strong data-count="2018">2018</strong><span>Freelancing on Fiverr since</span></li>
+      <li class="reveal"><strong><span data-count="4">4</span>+</strong><span>Student batches trained in design (PITP Phase 1)</span></li>
+      <li class="reveal"><strong><span data-count="14">14</span>+</strong><span>Projects shipped: bots, sites, data &amp; design</span></li>
+      <li class="reveal"><strong><span data-count="1000">1000</span>+</strong><span>Followers on LinkedIn</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="sec services" id="services" aria-labelledby="servicesTitle">
+    <div class="sec-head">
+      <p class="sec-kicker"><span>02</span> What I build</p>
+      <h2 class="sec-title" id="servicesTitle">Your business doesn't need more staff. It needs <em>smarter automation.</em></h2>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal" style="--c:#3fe0a8">
+        <span class="svc-ico" aria-hidden="true">💬</span>
+        <h3>WhatsApp AI Agents</h3>
+        <p>Agents that answer customers, understand documents and reply intelligently on WhatsApp, even when you're offline.</p>
+      </article>
+      <article class="svc reveal" style="--c:#ffd23f">
+        <span class="svc-ico" aria-hidden="true">⚙️</span>
+        <h3>Workflow Automation</h3>
+        <p>Custom n8n, Make and Zapier workflows that take repetitive tasks off your team's plate.</p>
+      </article>
+      <article class="svc reveal" style="--c:#5cc8ff">
+        <span class="svc-ico" aria-hidden="true">🤖</span>
+        <h3>AI Chatbots</h3>
+        <p>Assistants that keep conversation context and give useful answers, backed by OpenAI and Supabase.</p>
+      </article>
+      <article class="svc reveal" style="--c:#ff5fa8">
+        <span class="svc-ico" aria-hidden="true">⚡</span>
+        <h3>Websites, vibe-coded</h3>
+        <p>Course sites, institute portals and landing pages, built fast with AI-assisted development and shipped on Vercel.</p>
+      </article>
+      <article class="svc reveal" style="--c:#8b5cff">
+        <span class="svc-ico" aria-hidden="true">📊</span>
+        <h3>Data &amp; Dashboards</h3>
+        <p>Cleaning, SQL analysis and Power BI dashboards that turn raw transactions into decisions.</p>
+      </article>
+      <article class="svc reveal" style="--c:#ff8a2a">
+        <span class="svc-ico" aria-hidden="true">🎨</span>
+        <h3>Graphic Design</h3>
+        <p>Logos, branding and social content in Photoshop and Illustrator, from someone who teaches it.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="sec work" id="work" aria-labelledby="workTitle">
+    <div class="sec-head sec-head--row">
+      <div>
+        <p class="sec-kicker"><span>03</span> Selected work</p>
+        <h2 class="sec-title" id="workTitle">Things I've <em>made.</em></h2>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button type="button" class="filter is-on" data-f="all" aria-pressed="true">All</button>
+        <button type="button" class="filter" data-f="ai" aria-pressed="false">AI &amp; Automation</button>
+        <button type="button" class="filter" data-f="web" aria-pressed="false">Websites</button>
+        <button type="button" class="filter" data-f="data" aria-pressed="false">Data</button>
+        <button type="button" class="filter" data-f="design" aria-pressed="false">Design</button>
+      </div>
+    </div>
+
+    <div class="proj-grid" id="projGrid">
+      <article class="proj proj--feat reveal" data-cat="ai" style="--c:#3fe0a8">
+        <div class="proj-top"><span class="proj-num">01</span><span class="proj-cat">WhatsApp · Social impact</span></div>
+        <h3>Jamhoriyat Saheliyan RTI Chatbot</h3>
+        <p class="proj-client">for Collective Pakistan</p>
+        <p>A multi-flow WhatsApp chatbot that helps citizens understand the Sindh Transparency &amp; Right to Information Act 2016, work through their RTI questions and prepare RTI applications step by step.</p>
+        <ul class="tags"><li>WhatsApp</li><li>n8n</li><li>Conversational flows</li><li>RTI</li></ul>
+        <div class="proj-links"><a href="https://jamhoriyatsaheliyan.com/" target="_blank" rel="noopener">Jamhoriyat Saheliyan ↗</a></div>
+      </article>
+
+      <article class="proj proj--feat reveal" data-cat="web" style="--c:#3f6bff" data-dark>
+        <div class="proj-top"><span class="proj-num">02</span><span class="proj-cat">Next.js · Live site</span></div>
+        <h3>Skilltek Agentic AI</h3>
+        <p class="proj-client">for The Skilltek Institute &amp; Media Solution</p>
+        <p>The site for a 2-month, hands-on Agentic AI &amp; Automation program: 14 modules and 6 portfolio projects covering n8n, AI agents, WhatsApp automation, RAG, MCP and multi-agent systems.</p>
+        <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Vercel</li><li>Vibe coding</li></ul>
+        <div class="proj-links">
+          <a href="https://skilltek-agentic-ai.vercel.app/" target="_blank" rel="noopener">Live site ↗</a>
+          <a href="https://github.com/SARWAR110786/skilltek-agentic-ai" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="proj reveal" data-cat="ai" style="--c:#c8f03c">
+        <div class="proj-top"><span class="proj-num">03</span><span class="proj-cat">AI Automation</span></div>
+        <h3>WhatsApp AI Agent</h3>
+        <p>An intelligent WhatsApp system built with n8n and OpenAI that handles customer conversations, understands documents and automates business communication.</p>
+        <ul class="tags"><li>n8n</li><li>OpenAI</li><li>WhatsApp</li></ul>
+      </article>
+
+      <article class="proj reveal" data-cat="ai" style="--c:#5cc8ff">
+        <div class="proj-top"><span class="proj-num">04</span><span class="proj-cat">Chatbot</span></div>
+        <h3>AI Chatbot</h3>
+        <p>An AI chatbot that understands questions, remembers the conversation and gives intelligent answers, with chat history stored in Supabase.</p>
+        <ul class="tags"><li>n8n</li><li>Supabase</li><li>OpenAI</li></ul>
+      </article>
+
+      <article class="proj reveal" data-cat="ai web" style="--c:#ffd23f">
+        <div class="proj-top"><span class="proj-num">05</span><span class="proj-cat">PWA · Android · n8n agent</span></div>
+        <h3>Taleem Sathi</h3>
+        <p class="proj-client">People's School Thatta student project</p>
+        <p>A study-buddy chat app plus one-page website. The installable app (PWA and Android APK) talks to a live n8n agent, so replies update without reinstalling.</p>
+        <ul class="tags"><li>HTML</li><li>PWA</li><li>n8n</li><li>AI agent</li></ul>
+        <div class="proj-links"><a href="https://github.com/SARWAR110786/taleem-sathi" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="proj reveal" data-cat="ai" style="--c:#ff8a2a">
+        <div class="proj-top"><span class="proj-num">06</span><span class="proj-cat">n8n · AI filtering</span></div>
+        <h3>Opportunity Desk</h3>
+        <p>An automated discovery system that scans websites, spots relevant opportunities, filters them with AI and sends reports with direct application links.</p>
+        <ul class="tags"><li>n8n</li><li>AI</li><li>Web scraping</li></ul>
+      </article>
+
+      <article class="proj reveal" data-cat="web" style="--c:#ff5fa8">
+        <div class="proj-top"><span class="proj-num">07</span><span class="proj-cat">Website · Live</span></div>
+        <h3>Jamhoriyat Saheliyan Website</h3>
+        <p>The web home of the Jamhoriyat Saheliyan initiative, built alongside its WhatsApp chatbot.</p>
+        <ul class="tags"><li>TypeScript</li><li>Vibe coding</li></ul>
+        <div class="proj-links">
+          <a href="https://jamhoriyatsaheliyan.com/" target="_blank" rel="noopener">Live site ↗</a>
+          <a href="https://github.com/SARWAR110786/Jamhoriyat.Saheliyan" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="proj reveal" data-cat="web" style="--c:#8b5cff" data-dark>
+        <div class="proj-top"><span class="proj-num">08</span><span class="proj-cat">Student portal</span></div>
+        <h3>Skilltek Portal</h3>
+        <p>A student portal for Skilltek Institute, built with modern AI-assisted development and vibe coding.</p>
+        <ul class="tags"><li>TypeScript</li><li>Vibe coding</li></ul>
+        <div class="proj-links"><a href="https://github.com/SARWAR110786/Skilltek" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="proj reveal" data-cat="web" style="--c:#1c1c22" data-dark>
+        <div class="proj-top"><span class="proj-num">09</span><span class="proj-cat">Institute portal</span></div>
+        <h3>MIPS Institute Portal</h3>
+        <p>A portal for Makli Institute of Paramedical Sciences &amp; Technology (MIPS), Thatta.</p>
+        <ul class="tags"><li>TypeScript</li><li>Web app</li></ul>
+      </article>
+
+      <article class="proj reveal" data-cat="data" style="--c:#ffd23f">
+        <div class="proj-top"><span class="proj-num">10</span><span class="proj-cat">MySQL · Power BI</span></div>
+        <h3>Pizza Sales Analysis</h3>
+        <p>An end-to-end analytics project on retail pizza sales: from baseline revenue metrics to JOINs, window functions and CTEs, finding the top 3 earners per category and hourly demand peaks for kitchen scheduling.</p>
+        <ul class="tags"><li>MySQL</li><li>CTEs</li><li>Window functions</li><li>Power BI</li></ul>
+        <div class="proj-links"><a href="https://github.com/SARWAR110786/Pizza-Sale-Analysis-" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="proj reveal" data-cat="data" style="--c:#3fe0a8">
+        <div class="proj-top"><span class="proj-num">11</span><span class="proj-cat">Python · EDA</span></div>
+        <h3>Telecom Customer Churn</h3>
+        <p>Exploratory analysis of 7,043 telecom customers. It found month-to-month contracts, short tenure and electronic-check payments drive churn, and recommends retention actions.</p>
+        <ul class="tags"><li>Pandas</li><li>NumPy</li><li>Seaborn</li><li>Jupyter</li></ul>
+        <div class="proj-links"><a href="https://github.com/SARWAR110786/Telecom-Customer-Churn-Analysis" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="proj reveal" data-cat="data" style="--c:#5cc8ff">
+        <div class="proj-top"><span class="proj-num">12</span><span class="proj-cat">Python</span></div>
+        <h3>Python &amp; Advanced Python Projects</h3>
+        <p>Two collections of Python practice projects, from fundamentals to more advanced programs and automation scripts.</p>
+        <ul class="tags"><li>Python</li><li>Automation</li></ul>
+        <div class="proj-links">
+          <a href="https://github.com/SARWAR110786/Python-Projects" target="_blank" rel="noopener">Python ↗</a>
+          <a href="https://github.com/SARWAR110786/Advance-Python-Projects" target="_blank" rel="noopener">Advanced ↗</a>
+        </div>
+      </article>
+
+      <article class="proj reveal" data-cat="web" style="--c:#c8f03c">
+        <div class="proj-top"><span class="proj-num">13</span><span class="proj-cat">Frontend</span></div>
+        <h3>Web Development Projects</h3>
+        <p>Frontend projects in HTML, CSS, JavaScript, Bootstrap and APIs: games, clones, utility apps and API-based apps.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>APIs</li></ul>
+        <div class="proj-links"><a href="https://github.com/SARWAR110786/Web_Development_Projects" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="proj reveal" data-cat="design" style="--c:#ff5fa8">
+        <div class="proj-top"><span class="proj-num">14</span><span class="proj-cat">Jan – Feb 2026</span></div>
+        <h3>Nexora Solution Branding</h3>
+        <p>Logo and brand identity design for Nexora Solution.</p>
+        <ul class="tags"><li>Photoshop</li><li>Illustrator</li><li>Branding</li></ul>
+      </article>
+    </div>
+
+    <p class="work-more reveal">More code on <a href="https://github.com/SARWAR110786" target="_blank" rel="noopener">GitHub ↗</a></p>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="sec exp" id="experience" aria-labelledby="expTitle">
+    <div class="sec-head">
+      <p class="sec-kicker"><span>04</span> Experience</p>
+      <h2 class="sec-title" id="expTitle">Teaching, designing, <em>building.</em></h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="tl reveal">
+        <div class="tl-when"><span>Feb 2026</span><span>Present</span></div>
+        <div class="tl-body">
+          <h3>Instructor, Graphic Design</h3>
+          <p class="tl-org">NAVTTC (National Vocational &amp; Technical Training Commission) · Part-time · Thatta</p>
+          <p>Teaching graphic design at Perfect Computer System Institute under the NAVTTC programme.</p>
+        </div>
+      </li>
+      <li class="tl reveal">
+        <div class="tl-when"><span>Jan 2024</span><span>Present</span></div>
+        <div class="tl-body">
+          <h3>Graphic Designing Instructor</h3>
+          <p class="tl-org">People's Information Technology Programme (PITP), MUET · Govt. of Sindh · Thatta</p>
+          <p>Completed 4 batches in Phase 1 and now teaching Phase 2, covering Photoshop, Illustrator, typography, colour theory and visual communication. Received an experience certificate as a certified course trainer.</p>
+        </div>
+      </li>
+      <li class="tl reveal">
+        <div class="tl-when"><span>2026</span><span>Project</span></div>
+        <div class="tl-body">
+          <h3>WhatsApp Automation Developer</h3>
+          <p class="tl-org">Collective Pakistan · Jamhoriyat Saheliyan</p>
+          <p>Designed and built a multi-flow RTI chatbot on WhatsApp for public awareness and access to information.</p>
+        </div>
+      </li>
+      <li class="tl reveal">
+        <div class="tl-when"><span>Jan 2023</span><span>Present</span></div>
+        <div class="tl-body">
+          <h3>Director Social Media</h3>
+          <p class="tl-org">Youth Development Welfare Organization · Makli, Thatta</p>
+          <p>Leading the organisation's social media presence and designs as part of its general body.</p>
+        </div>
+      </li>
+      <li class="tl reveal">
+        <div class="tl-when"><span>Oct 2018</span><span>Present</span></div>
+        <div class="tl-body">
+          <h3>Freelance Designer → AI Agentic Developer</h3>
+          <p class="tl-org">Fiverr · Self-employed</p>
+          <p>Started with design work for clients and grew into AI agents, automation and data projects.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="sec skills" id="skills" aria-labelledby="skillsTitle">
+    <div class="sec-head">
+      <p class="sec-kicker"><span>05</span> Toolkit</p>
+      <h2 class="sec-title" id="skillsTitle">The keys I <em>press</em> every day.</h2>
+    </div>
+
+    <div class="sk-grid">
+      <div class="sk reveal">
+        <h3>AI &amp; Automation</h3>
+        <ul class="caps"><li>n8n</li><li>OpenAI</li><li>AI Agents</li><li>WhatsApp Bots</li><li>RAG</li><li>MCP</li><li>Make</li><li>Zapier</li><li>APIs &amp; Webhooks</li></ul>
+      </div>
+      <div class="sk reveal">
+        <h3>Data</h3>
+        <ul class="caps"><li>Python</li><li>Pandas</li><li>NumPy</li><li>SQL / MySQL</li><li>Power BI</li><li>Excel</li><li>Matplotlib</li><li>Seaborn</li></ul>
+      </div>
+      <div class="sk reveal">
+        <h3>Build</h3>
+        <ul class="caps"><li>Vibe Coding</li><li>Next.js</li><li>TypeScript</li><li>HTML / CSS / JS</li><li>Supabase</li><li>Vercel</li><li>PWA</li></ul>
+      </div>
+      <div class="sk reveal">
+        <h3>Design &amp; People</h3>
+        <ul class="caps"><li>Photoshop</li><li>Illustrator</li><li>Figma</li><li>Branding</li><li>Social Media</li><li>Teaching</li><li>Team Leadership</li></ul>
+      </div>
+    </div>
+
+    <div class="vibe reveal">
+      <p class="vibe-kicker">How I vibe-code</p>
+      <ol class="vibe-steps">
+        <li><strong>Describe</strong><span>Start from the real problem and the people who'll use it.</span></li>
+        <li><strong>Generate</strong><span>Let AI draft the code, the flows and the copy.</span></li>
+        <li><strong>Direct</strong><span>Review, refactor and push it until it fits.</span></li>
+        <li><strong>Ship</strong><span>Deploy, test with users, iterate.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION & CERTS ============ -->
+  <section class="sec certs" id="education" aria-labelledby="eduTitle">
+    <div class="sec-head">
+      <p class="sec-kicker"><span>06</span> Education &amp; certifications</p>
+      <h2 class="sec-title" id="eduTitle">Still learning. <em>Still growing.</em></h2>
+    </div>
+    <div class="cert-grid">
+      <article class="cert cert--edu reveal">
+        <p class="cert-iss">University of Sindh</p>
+        <h3>BS Computer Science</h3>
+        <p class="cert-date">In progress</p>
+      </article>
+      <article class="cert reveal">
+        <p class="cert-iss">Google</p>
+        <h3>Gemini Certified Educator</h3>
+        <p class="cert-date">Issued Nov 2025</p>
+      </article>
+      <article class="cert reveal">
+        <p class="cert-iss">DeepLearning.AI</p>
+        <h3>AI Python for Beginners</h3>
+        <p class="cert-date">Issued Jan 2025</p>
+      </article>
+      <article class="cert reveal">
+        <p class="cert-iss">CodeWithHarry</p>
+        <h3>The Ultimate Job Ready Data Science Course</h3>
+        <p class="cert-date">Python · Data science</p>
+      </article>
+      <article class="cert reveal">
+        <p class="cert-iss">CodeWithHarry</p>
+        <h3>Complete Python Bootcamp</h3>
+        <p class="cert-date">Python from scratch</p>
+      </article>
+      <article class="cert reveal">
+        <p class="cert-iss">LinkedIn</p>
+        <h3>Certified Content Marketing Specialist</h3>
+        <p class="cert-date">Issued Mar 2022</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" aria-labelledby="ctaTitle">
+    <p class="sec-kicker"><span>07</span> Let's talk</p>
+    <h2 class="cta-title" id="ctaTitle">Looking to automate your business? <em>Let's build it.</em></h2>
+    <p class="cta-sub">I work with businesses, startups, institutes and founders who want to put AI automation into action.</p>
+    <div class="cta-actions">
+      <a class="key key--black" href="https://wa.me/923173024105" target="_blank" rel="noopener"><span class="key-legend" aria-hidden="true">⏎</span><span class="key-label">WhatsApp me ↗</span></a>
+      <a class="key key--white" href="mailto:sarwaralii785@gmail.com"><span class="key-legend" aria-hidden="true">@</span><span class="key-label">sarwaralii785@gmail.com</span></a>
+    </div>
+  </section>
+  </main>
+
+  <!-- ============ FOOTER / SOCIALS ============ -->
+  <footer class="foot" id="contact">
+    <div class="foot-intro">
+      <img class="foot-avatar" src="assets/sarwar-sm.jpg" alt="Sarwar Ali" width="72" height="72" loading="lazy" />
+      <p class="foot-line">Have an idea or a project in mind? <em>Let's build something useful together.</em></p>
+    </div>
+    <ul class="socials" aria-label="Sarwar on social media">
+      <li><a href="https://wa.me/923173024105" target="_blank" rel="noopener" aria-label="WhatsApp" class="socials-wa">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.98L2 22l5.17-1.5A9.93 9.93 0 1 0 12.04 2Zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.07.89.9-2.99-.2-.31a8.2 8.2 0 1 1 6.86 3.74Zm4.5-6.13c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.16.25-.63.8-.78.97-.14.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.31c-.23.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.25 1.05.4 1.4.52.59.19 1.13.16 1.55.1.47-.07 1.46-.6 1.66-1.17.21-.58.21-1.07.14-1.17-.06-.1-.22-.17-.47-.29Z"/></svg><span>WhatsApp</span></a></li>
+      <li><a href="mailto:sarwaralii785@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2.4V17h16V7.4l-8 5.6-8-5.6ZM5.6 7 12 11.5 18.4 7H5.6Z"/></svg><span>Email</span></a></li>
+      <li><a href="https://www.linkedin.com/in/sarwar-ali-6991b1277/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-3.95v-11Z"/></svg><span>LinkedIn</span></a></li>
+      <li><a href="https://github.com/SARWAR110786" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg><span>GitHub</span></a></li>
+      <li><a href="https://www.instagram.com/sarwar9695/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6Zm0 7.9a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2Zm6.1-8.1a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0ZM12 2.2c-2.66 0-3 .01-4.04.06-1.05.05-1.76.21-2.39.46a4.8 4.8 0 0 0-1.73 1.13A4.8 4.8 0 0 0 2.71 5.6c-.24.62-.41 1.34-.46 2.39C2.2 9.03 2.2 9.37 2.2 12s.01 3 .06 4.04c.05 1.05.21 1.76.46 2.39.25.65.59 1.2 1.13 1.73.54.54 1.08.88 1.73 1.13.62.24 1.34.41 2.39.46 1.04.05 1.38.06 4.04.06s3-.01 4.04-.06c1.05-.05 1.76-.21 2.39-.46a4.8 4.8 0 0 0 1.73-1.13 4.8 4.8 0 0 0 1.13-1.73c.24-.62.41-1.34.46-2.39.05-1.04.06-1.38.06-4.04s-.01-3-.06-4.04c-.05-1.05-.21-1.76-.46-2.39a4.8 4.8 0 0 0-1.13-1.73A4.8 4.8 0 0 0 18.4 2.7c-.62-.24-1.34-.41-2.39-.46C15 2.2 14.66 2.2 12 2.2Zm0 1.76c2.62 0 2.93.01 3.96.06.96.04 1.48.2 1.82.34.46.18.79.39 1.13.74.35.34.56.67.74 1.13.13.35.3.87.34 1.82.05 1.04.06 1.35.06 3.96s-.01 2.93-.06 3.96c-.04.96-.2 1.48-.34 1.82-.18.46-.39.79-.74 1.13-.34.35-.67.56-1.13.74-.35.13-.87.3-1.82.34-1.04.05-1.35.06-3.96.06s-2.93-.01-3.96-.06c-.96-.04-1.48-.2-1.82-.34a3.03 3.03 0 0 1-1.13-.74 3.03 3.03 0 0 1-.74-1.13c-.13-.35-.3-.87-.34-1.82C3.97 14.93 3.96 14.62 3.96 12s.01-2.93.06-3.96c.04-.96.2-1.48.34-1.82.18-.46.39-.79.74-1.13.34-.35.67-.56 1.13-.74.35-.13.87-.3 1.82-.34C9.07 3.97 9.38 3.96 12 3.96Z"/></svg><span>Instagram</span></a></li>
+      <li><a href="https://www.facebook.com/Saruali" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21.5v-8h2.7l.4-3.2h-3.1V8.3c0-.92.26-1.55 1.58-1.55h1.68V3.9a22 22 0 0 0-2.45-.13c-2.43 0-4.09 1.48-4.09 4.2v2.33H7.5v3.2h2.72v8h3.28Z"/></svg><span>Facebook</span></a></li>
+      <li><a href="cv/Sarwar-Ali-CV.pdf" target="_blank" rel="noopener" data-cv class="socials-cv">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3Zm-7 16h16v2H4v-2Z"/></svg><span>Download CV</span></a></li>
+    </ul>
+    <p class="foot-meta"><span class="foot-contact">WhatsApp 0317 3024105 · sarwaralii785@gmail.com</span><br />© 2026 Sarwar Ali · Makli, Thatta · Sindh, Pakistan</p>
+  </footer>
+
+  <!-- ============ DETAIL CARD ============ -->
+  <aside class="card" id="card" aria-live="polite" aria-hidden="true">
+    <span class="card-stripe" id="cardStripe"></span>
+    <img class="card-photo" src="assets/sarwar.jpg" alt="Portrait of Sarwar Ali" width="640" height="640" loading="lazy" />
+    <button type="button" class="card-close" id="cardClose" aria-label="Close details">×</button>
+    <p class="card-kicker" id="cardKicker"></p>
+    <h3 class="card-title" id="cardTitle"></h3>
+    <div class="card-body" id="cardBody"></div>
+  </aside>
+
+  <!-- ============ CV VIEWER ============ -->
+  <div class="cv-modal" id="cvModal" hidden role="dialog" aria-modal="true" aria-labelledby="cvTitle">
+    <div class="cv-sheet">
+      <div class="cv-bar">
+        <h3 class="cv-title" id="cvTitle">Sarwar Ali · CV</h3>
+        <a class="key key--black cv-dl" href="cv/Sarwar-Ali-CV.pdf" target="_blank" rel="noopener">
+          <span class="key-legend" aria-hidden="true">↓</span>
+          <span class="key-label">Open PDF</span>
+        </a>
+        <button type="button" class="card-close cv-close" id="cvClose" aria-label="Close CV">×</button>
+      </div>
+      <div class="cv-scroll">
+        <img src="assets/cv-preview.jpg" alt="Sarwar Ali's CV: profile, projects, experience, education and skills" width="1588" height="2246" loading="lazy" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="sections.js"></script>
+</body>
+</html>
