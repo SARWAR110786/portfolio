@@ -22,6 +22,7 @@ RewriteRule .* - [F,L]
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{HTTP_REFERER} !^https?://(www\.)?(sarwar\.)?theskilltek\.com [NC]
 RewriteCond %{HTTP_REFERER} !(google|bing|duckduckgo|facebook|linkedin|whatsapp|twitter|x\.com|t\.co|telegram|slack|instagram) [NC]
+RewriteCond %{REQUEST_URI} !og-image\.jpg$ [NC]
 RewriteRule \.(jpe?g|png|webp|gif)$ - [F,NC,L]
 
 # Hide repository files
