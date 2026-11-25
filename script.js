@@ -92,8 +92,8 @@
       tech: ['Photoshop', 'Illustrator'] },
 
     // C. Background
-    { id: 'cs', group: 'about', kicker: 'Education', title: 'CS Student', sub: 'University of Sindh',
-      desc: "Pursuing a BS in Computer Science at the University of Sindh." },
+    { id: 'cs', group: 'about', kicker: 'Education', title: 'CS Graduate', sub: 'University of Sindh',
+      desc: "Graduated with a BS in Computer Science from the University of Sindh." },
     { id: 'trainer', group: 'about', kicker: 'Experience', title: 'PITP Trainer', sub: 'PITP · MUET · 2024–now',
       desc: "Graphic Designing Instructor for the People's Information Technology Programme (Govt. of Sindh, MUET) in Thatta since Jan 2024. Completed 4 batches in Phase 1, now teaching Phase 2." },
     { id: 'navttc', group: 'about', kicker: 'Experience', title: 'NAVTTC', sub: 'Instructor · 2026–now',
@@ -109,7 +109,7 @@
 
     // Profile
     { id: 'about', group: 'about', kicker: 'Profile', title: 'About Sarwar', sub: 'CS · AI · Data', photo: true,
-      desc: "I'm the CTO of SkillTek Institute & Media Solutions in Thatta, a Computer Science student and an AI automation developer. I build WhatsApp chatbots, AI agents, websites and dashboards." },
+      desc: "I'm the CTO of SkillTek Institute & Media Solutions in Thatta, a Computer Science graduate and an AI automation developer. I build WhatsApp chatbots, AI agents, websites and dashboards." },
     { id: 'cto', group: 'about', kicker: 'Experience', title: 'SkillTek CTO', sub: 'Chief Technology Officer', photo: true,
       desc: 'Chief Technology Officer at SkillTek Institute & Media Solutions, Thatta: technology strategy, the website, student portal, LMS and automation tools, IT infrastructure and digital systems.',
       url: 'https://theskilltek.com/', urlLabel: 'Visit SkillTek ↗' },
