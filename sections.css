@@ -322,3 +322,6 @@ html, body { overflow-x: clip; }
 
 /* Copy protection for images */
 img { -webkit-user-drag: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+
+.lede-link { color: var(--ink); font-weight: 700; text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.tl-org a { color: inherit; }

@@ -11,7 +11,7 @@
   const CONFIG = {
     whatsapp: '923173024105',
     whatsappDisplay: '0317 3024105',   // international number, digits only, e.g. '923001234567'
-    email: 'sarwaralii785@gmail.com',      // e.g. 'hello@example.com'
+    email: 'sarwardeveloper@gmail.com',      // e.g. 'hello@example.com'
     linkedin: 'https://www.linkedin.com/in/sarwar-ali-6991b1277/',
     github: 'https://github.com/SARWAR110786',
     instagram: 'https://www.instagram.com/sarwar9695/',
@@ -109,7 +109,10 @@
 
     // Profile
     { id: 'about', group: 'about', kicker: 'Profile', title: 'About Sarwar', sub: 'CS · AI · Data', photo: true,
-      desc: "I'm a Computer Science student and technology enthusiast interested in building intelligent digital solutions. My interests include AI automation, data analytics, Python, and modern web development." },
+      desc: "I'm the CTO of SkillTek Institute & Media Solutions in Thatta, a Computer Science student and an AI automation developer. I build WhatsApp chatbots, AI agents, websites and dashboards." },
+    { id: 'cto', group: 'about', kicker: 'Experience', title: 'SkillTek CTO', sub: 'Chief Technology Officer', photo: true,
+      desc: 'Chief Technology Officer at SkillTek Institute & Media Solutions, Thatta: technology strategy, the website, student portal, LMS and automation tools, IT infrastructure and digital systems.',
+      url: 'https://theskilltek.com/', urlLabel: 'Visit SkillTek ↗' },
     { id: 'whatido', group: 'about', kicker: 'Profile', title: 'What I Do', sub: 'Build · Automate · Analyse',
       list: ['AI-powered chatbots', 'WhatsApp automation', 'Business workflow automation', 'AI agent development',
              'Data analysis and visualization', 'Dashboard development',
@@ -146,14 +149,14 @@
   const BY_ID = Object.fromEntries([...BIG, ...TAGS].map((s) => [s.id, s]));
 
   // Order used while holding the trigger (every 4th shot is swapped for a random tag)
-  const ROTATION = ['p4', 'p2', 'n8n', 'about', 'p6', 'vibe', 'p1', 'trainer', 'p8', 'python', 'p10', 'sql',
+  const ROTATION = ['cto', 'p4', 'p2', 'n8n', 'about', 'p6', 'vibe', 'p1', 'trainer', 'p8', 'python', 'p10', 'sql',
     'p7', 'openai', 'cs', 'p5', 'p11', 'powerbi', 'navttc', 'p3', 'supabase', 'whatido', 'p9', 'pandas', 'fiverr',
     'design', 'p12', 'certs', 'data', 'ydwo', 'numpy', 'excel', 'make', 'approach', 'builder', 'contact'];
 
   const GROUPS = {
     work: ['p4', 'p2', 'p6', 'p1', 'p8', 'p5', 'p7', 'p3', 'p9', 'p10', 'p11', 'p12'],
     skills: ['python', 'data', 'powerbi', 'sql', 'pandas', 'numpy', 'n8n', 'supabase', 'openai', 'excel', 'make', 'vibe', 'design'],
-    about: ['about', 'trainer', 'navttc', 'ydwo', 'fiverr', 'cs', 'certs', 'whatido', 'approach', 'builder'],
+    about: ['about', 'cto', 'trainer', 'navttc', 'ydwo', 'fiverr', 'cs', 'certs', 'whatido', 'approach', 'builder'],
     contact: ['contact', 't-whatsapp', 'about'],
   };
 
