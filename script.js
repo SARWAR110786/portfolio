@@ -16,7 +16,7 @@
     github: 'https://github.com/SARWAR110786',
     instagram: 'https://www.instagram.com/sarwar9695/',
     facebook: 'https://www.facebook.com/Saruali',
-    cv: 'cv/Sarwar-Ali-CV.pdf', // replace this file with your own CV any time
+    cv: 'cv/Sarwar-Ali-CV.pdf?v=2', // replace this file with your own CV any time
   };
 
   /* ---------------------------------------------------------
